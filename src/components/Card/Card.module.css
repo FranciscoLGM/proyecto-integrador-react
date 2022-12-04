@@ -1,0 +1,31 @@
+.card {
+  border: 2px solid #0b5ed7;
+  border-radius: 10px;
+  width: 225.333px;
+  min-height: 338px;
+  margin: 0 auto;
+}
+.card:hover {
+  transition: all 0.2s ease-in-out;
+  transition-property: all;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  filter: grayscale(75%);
+  transform: scale(1.1);
+}
+.content {
+  padding: 10px;
+}
+.img {
+  border-radius: 10px;
+  width: 100%;
+}
+.badge {
+  top: 10px;
+  right: 58px;
+  font-size: 16px;
+}
+.language {
+  color: #acd7de;
+}

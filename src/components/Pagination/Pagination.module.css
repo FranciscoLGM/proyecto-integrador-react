@@ -1,0 +1,26 @@
+a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+a:hover {
+  color: #f8f9fa;
+}
+a:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    font-size: 12px;
+  }
+
+  .next,
+  .prev {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .pagination {
+    font-size: 14px;
+  }
+}
