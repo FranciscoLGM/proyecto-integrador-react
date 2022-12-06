@@ -1,5 +1,6 @@
 import React from "react";
-import FilterBTN from "../FilterBTN";
+import FilterBTN from "../FilterBTN.jsx";
+import styles from "./category.module.css";
 
 const Genres = ({ setGenre, setPageNumber }) => {
   let genres = [
@@ -35,11 +36,11 @@ const Genres = ({ setGenre, setPageNumber }) => {
     <div className="dropdown">
       <button
         style={{
-          width: "202px",
+          width: "203px",
           backgroundColor: "#282828",
-          border: "2px solid #0b5ed7",
+          border: "2px solid #282828",
         }}
-        className="btn btn-dark dropdown-toggle"
+        className={`${styles.btn} btn text-light dropdown-toggle`}
         type="button"
         data-bs-toggle="dropdown"
         aria-expanded="false"
@@ -49,7 +50,7 @@ const Genres = ({ setGenre, setPageNumber }) => {
       <ul className="dropdown-menu dropdown-menu-dark">
         {genres.map((item, index) => {
           return (
-            <li className="dropdown-item">
+            <li key={index} className="dropdown-item">
               <FilterBTN
                 key={index}
                 index={index}

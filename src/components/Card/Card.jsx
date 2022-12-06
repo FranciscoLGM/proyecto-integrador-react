@@ -1,13 +1,17 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Card.module.css";
 
-const Card = ({ results }) => {
+const Card = ({ page, results }) => {
   let display;
   if (results) {
     display = results?.map((movie) => {
       let { id, medium_cover_image, title, year, language } = movie;
 
       return (
-        <div
+        <Link
+          style={{ textDecoration: "none" }}
+          to={`${page}${id}`}
           key={id}
           className="col-lg-3 col-md-4 col-sm-6 col-12 mb-4 position-relative text-light"
         >
@@ -29,7 +33,7 @@ const Card = ({ results }) => {
             </div>
             <div className="fs-6">{year}</div>
           </div>
-        </div>
+        </Link>
       );
     });
   } else {

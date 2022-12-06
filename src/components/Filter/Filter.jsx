@@ -1,8 +1,8 @@
 import React from "react";
-import Genres from "./category/Genres";
-import Quality from "./category/Quality";
-import Rating from "./category/Rating";
-import SortBy from "./category/SortBy";
+import Genres from "./category/Genres.jsx";
+import Quality from "./category/Quality.jsx";
+import Rating from "./category/Rating.jsx";
+import SortBy from "./category/SortBy.jsx";
 
 const Filter = ({
   pageNumber,
@@ -30,7 +30,7 @@ const Filter = ({
         <Rating setPageNumber={setPageNumber} setRating={setRating} />
         <Genres setPageNumber={setPageNumber} setGenre={setGenre} />
         <SortBy setPageNumber={setPageNumber} setSortBy={setSortBy} />
-        <div onClick={clear} className="btn btn-primary">
+        <div onClick={clear} className="btn btn-secondary fs-6">
           Limpiar filtros
         </div>
       </div>

@@ -1,15 +1,31 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import axios from "axios";
 
 // Components
 import Card from "./components/Card/Card.jsx";
-import Filter from "./components/Filter/Filter";
-// import Navbar from "./components/Navbar/Navbar";
-import Pagination from "./components/Pagination/Pagination";
-import Search from "./components/Search/Search";
+import Filter from "./components/Filter/Filter.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import Pagination from "./components/Pagination/Pagination.jsx";
+import Search from "./components/Search/Search.jsx";
+import FilmDetail from "./pages/FilmDetail/FilmDetail.jsx";
 
 function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<FilmDetail />} />
+      </Routes>
+    </Router>
+  );
+}
+
+const Home = () => {
   const [fetchedData, setFetchedData] = useState([]);
   const { movie_count, movies } = fetchedData;
   const [pageNumber, setPageNumber] = useState(1);
@@ -48,7 +64,7 @@ function App() {
         </section>
       </header>
       <main className="container">
-        <h1 className="text-center text-light mb-3 mt-3">Películas</h1>
+        <h1 className="text-center text-light mb-3 mt-3 fs-2">Películas</h1>
         <Pagination
           movieCount={movie_count}
           pageNumber={pageNumber}
@@ -58,7 +74,7 @@ function App() {
 
         <div className="col-lg-12 col-12">
           <div className="row d-flex justify-content-center">
-            <Card results={movies} />
+            <Card page="/" results={movies} />
           </div>
         </div>
 
@@ -71,6 +87,6 @@ function App() {
       </main>
     </div>
   );
-}
+};
 
 export default App;

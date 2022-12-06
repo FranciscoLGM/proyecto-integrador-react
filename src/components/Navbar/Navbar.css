@@ -1,0 +1,10 @@
+nav {
+  background-color: #1d1d1d;
+  width: 100%;
+}
+button[aria-expanded="false"] > .close {
+  display: none;
+}
+button[aria-expanded="true"] > .open {
+  display: none;
+}

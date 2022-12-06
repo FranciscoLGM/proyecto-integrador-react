@@ -1,0 +1,10 @@
+article {
+  width: 345px;
+}
+img {
+  width: 100%;
+}
+.grid-film {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 250px;
+}
