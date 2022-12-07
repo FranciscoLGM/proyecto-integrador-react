@@ -6,7 +6,7 @@ const Card = ({ page, results }) => {
   let display;
   if (results) {
     display = results?.map((movie) => {
-      let { id, medium_cover_image, title, year, language } = movie;
+      const { id, medium_cover_image, title, year, language } = movie;
 
       return (
         <Link

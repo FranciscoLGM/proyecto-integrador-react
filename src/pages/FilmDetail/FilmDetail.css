@@ -1,4 +1,4 @@
-article {
+picture {
   width: 345px;
 }
 img {
@@ -7,4 +7,26 @@ img {
 .grid-film {
   display: grid;
   grid-template-columns: repeat(2, 1fr) 250px;
+}
+.grid-trailer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+iframe {
+  width: 540px;
+  height: 315px;
+  border-radius: 10px;
+}
+.container-carrusel {
+  margin: 0 auto;
+}
+.grid-argument {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cast {
+  width: 7%;
+}
+.argument {
+  text-align: justify;
 }

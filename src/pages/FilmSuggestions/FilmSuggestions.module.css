@@ -1,6 +1,7 @@
 .suggestions {
   width: 125px;
 }
-img {
+.img {
   border-radius: 10px;
+  width: 100%;
 }

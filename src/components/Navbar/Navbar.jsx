@@ -19,8 +19,8 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="fas fa-bars open text-light"></span>
-          <span class="fas fa-times close text-light"></span>
+          <span className="fas fa-bars open text-light"></span>
+          <span className="fas fa-times close text-light"></span>
         </button>
 
         <div

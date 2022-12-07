@@ -39,7 +39,7 @@ const Home = () => {
   let api = ` https://yts.mx/api/v2/list_movies.json?page=${pageNumber}&query_term=${search}&limit=${pageLimit}&quality=${quality}&genre=${genre}&minimum_rating=${rating}&sort_by=${sortBy}`;
 
   useEffect(() => {
-    axios.get(api).then((response) => setFetchedData(response.data?.data));
+    axios.get(api).then((response) => setFetchedData(response?.data.data));
   }, [api]);
   return (
     <div className="App">
@@ -48,10 +48,10 @@ const Home = () => {
           <div className="container text-light fw-bold fs-4 mb-4 mt-4 ps-5 pe-5">
             Términos de búsqueda:
           </div>
-          <article className="container ps-5 pe-5">
+          <div className="container ps-5 pe-5">
             <Search setSearch={setSearch} setPageNumber={setPageNumber} />
-          </article>
-          <article className="container ps-5 pe-5">
+          </div>
+          <div className="container ps-5 pe-5">
             <Filter
               pageNumber={pageNumber}
               setGenre={setGenre}
@@ -60,7 +60,7 @@ const Home = () => {
               setSortBy={setSortBy}
               setPageNumber={setPageNumber}
             />
-          </article>
+          </div>
         </section>
       </header>
       <main className="container">
