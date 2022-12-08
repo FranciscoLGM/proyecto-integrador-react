@@ -113,8 +113,8 @@ const FilmDetail = () => {
                   : notFound;
               })()}
               title="YouTube video player"
-              frameborder="0"
-              allowfullscreen="true"
+              frameBorder="0"
+              allowFullScreen="true"
             ></iframe>
           </div>
           <div>

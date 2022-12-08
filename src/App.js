@@ -5,11 +5,12 @@ import axios from "axios";
 
 // Components
 import Card from "./components/Card/Card.jsx";
+import FilmDetail from "./components/FilmDetail/FilmDetail.jsx";
 import Filter from "./components/Filter/Filter.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Pagination from "./components/Pagination/Pagination.jsx";
 import Search from "./components/Search/Search.jsx";
-import FilmDetail from "./pages/FilmDetail/FilmDetail.jsx";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/:id" element={<FilmDetail />} />
       </Routes>
+      <div className="App">
+        <Footer />
+      </div>
     </Router>
   );
 }
