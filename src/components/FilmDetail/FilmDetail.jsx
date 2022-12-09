@@ -113,8 +113,7 @@ const FilmDetail = () => {
                   : notFound;
               })()}
               title="YouTube video player"
-              frameBorder="0"
-              allowFullScreen="true"
+              allowFullScreen={true}
             ></iframe>
           </div>
           <div>
@@ -151,7 +150,7 @@ const FilmDetail = () => {
           </div>
         </section>
 
-        <section className="grid-argument gap-5 mt-5 text-light">
+        <section className="grid-argument gap-5 mt-5 pb-4 text-light">
           <div>
             <h2 className="pb-3 pt-3 fw-bold">Argumento</h2>
             <p className="argument">{description_full}</p>
