@@ -23,7 +23,7 @@ const Filter = ({
   return (
     <div className="col-lg-12 col-12 mb-5">
       <div
-        className="accordion d-flex justify-content-between gap-3"
+        className="accordion d-flex flex-sm-row flex-column flex-wrap align-items-center justify-content-between gap-3"
         id="accordionExample"
       >
         <Quality setPageNumber={setPageNumber} setQuality={setQuality} />

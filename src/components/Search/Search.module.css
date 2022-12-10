@@ -19,3 +19,8 @@
     width: 80%;
   }
 }
+@media (max-width: 400px) {
+  .input::placeholder {
+    color: #282828;
+  }
+}
