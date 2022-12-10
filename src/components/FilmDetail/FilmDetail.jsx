@@ -70,7 +70,7 @@ const FilmDetail = () => {
             <h2 className="fs-5 mb-2">{`Idioma: ${language?.toUpperCase()}`}</h2>
             <h2 className="fs-5 mb-2">{`Género: ${String(genres)
               .split(",")
-              .join("/")}`}</h2>
+              .join(" / ")}`}</h2>
             <h2 className="fs-5 mb-2">{`Calificación: ${rating}`}</h2>
             <h2 className="fs-5 mb-2">{`Descargas: ${download_count}`}</h2>
             <h2 className="fs-5 mb-2">{`Likes: ${like_count}`}</h2>
