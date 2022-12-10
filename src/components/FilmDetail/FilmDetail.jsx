@@ -98,7 +98,7 @@ const FilmDetail = () => {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row film-suggestions">
             <FilmSuggestions />
           </div>
         </section>
@@ -162,7 +162,7 @@ const FilmDetail = () => {
               {cast?.map((cast, index) => (
                 <div
                   key={index}
-                  className="d-flex flex-wrap align-items-center gap-2"
+                  className="flex-argument d-flex flex-wrap align-items-center gap-2"
                 >
                   <img
                     className="cast img-fluid rounded-circle border border-light mb-2"
