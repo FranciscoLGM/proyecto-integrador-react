@@ -107,11 +107,10 @@ const FilmDetail = () => {
           <div>
             <h2 className="pb-3 pt-3 fw-bold">Trailer</h2>
             <iframe
-              src={(() => {
-                return yt_trailer_code?.length > 1
+              src={(() =>
+                yt_trailer_code?.length > 1
                   ? `https://www.youtube.com/embed/${yt_trailer_code}`
-                  : notFound;
-              })()}
+                  : notFound)()}
               title="YouTube video player"
               allowFullScreen={true}
             ></iframe>
