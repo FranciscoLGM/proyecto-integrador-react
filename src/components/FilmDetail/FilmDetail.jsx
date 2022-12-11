@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./FilmDetail.css";
-import noPoster from "../../assets/images/noposter.svg";
 import notFound from "../../assets/images/notfound.jpg";
 import defaultUser from "../../assets/images/defaultuser.png";
 
@@ -56,11 +55,11 @@ const FilmDetail = () => {
     >
       <main className="container">
         <section className="grid-film gap-5 pt-4 text-light">
-          <picture className="text-center fw-semibold fs-5">
+          <picture className="d-flex text-center fw-semibold fs-5">
             <img
               className="img-fluid border border-3 rounded"
-              src={large_cover_image || noPoster}
-              alt={title}
+              src={large_cover_image}
+              alt={""}
             />
           </picture>
 

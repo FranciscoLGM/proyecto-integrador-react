@@ -21,7 +21,7 @@ const Card = ({ page, results }) => {
             <img
               className={`${styles.img} img-fluid`}
               src={medium_cover_image}
-              alt={title}
+              alt={""}
             />
           </div>
           <div className={`${styles.content}`}>

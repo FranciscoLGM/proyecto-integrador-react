@@ -1,5 +1,8 @@
 picture {
   width: 345px;
+  background-image: url("../../assets/images/noposter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 img {
   width: 100%;

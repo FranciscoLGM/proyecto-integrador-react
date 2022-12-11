@@ -4,6 +4,9 @@
   width: 225.333px;
   min-height: 338px;
   margin: 0 auto;
+  background-image: url("../../assets/images/noposter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .card:hover {
   transition: all 0.2s ease-in-out;
