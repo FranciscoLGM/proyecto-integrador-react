@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container">
         <Link to={"/"} className="navbar-brand fs-3">
-          Películas <span className="text-primary">YTS</span>
+          Películas <span className="text-primary fw-semibold">YTS</span>
         </Link>
 
         <button
