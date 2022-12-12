@@ -91,19 +91,19 @@ const Footer = () => {
                     ></button>
                   </div>
                   <div className="modal-body text-start">
-                    <p>
+                    <p className="disclaimer">
                       Un link dentro de una página web (denominado también
                       enlace, vínculo o hipervínculo) es un elemento que hace
                       referencia a otro recurso.
                     </p>
-                    <p>
+                    <p className="disclaimer">
                       Los links son simples enlaces que direccionan hacia cierta
                       información o activan determinados contenidos, pero que en
                       ningún caso constituyen reproducciones de los contenidos a
                       los cuales enlaza. Tales enlaces son de libre circulación
                       por Internet y accesibles desde cualquier buscador.
                     </p>
-                    <p>
+                    <p className="disclaimer">
                       En el servidor de este sitio no hay películas, ni ningún
                       contenido ilegal. Un link no vulnera el derecho de
                       reproducción; las direcciones URL son meros hechos que no

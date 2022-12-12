@@ -55,7 +55,7 @@ const FilmDetail = () => {
     >
       <main className="container">
         <section className="grid-film gap-5 pt-4 text-light">
-          <picture className="d-flex text-center fw-semibold fs-5">
+          <picture className="cover-container d-flex text-center fw-semibold fs-5">
             <img
               className="img-fluid border border-3 rounded"
               src={large_cover_image}
@@ -64,25 +64,25 @@ const FilmDetail = () => {
           </picture>
 
           <div>
-            <h1 className="fw-bold">{title}</h1>
-            <h2 className="fs-5 mb-2 mt-4">{`Año: ${year}`}</h2>
-            <h2 className="fs-5 mb-2">{`Idioma: ${language?.toUpperCase()}`}</h2>
-            <h2 className="fs-5 mb-2">{`Género: ${String(genres)
+            <h1 className="film-title fw-bold">{title}</h1>
+            <h2 className="film-year fs-5 mb-2 mt-4">{`Año: ${year}`}</h2>
+            <h2 className="film-language fs-5 mb-2">{`Idioma: ${language?.toUpperCase()}`}</h2>
+            <h2 className="film-genres fs-5 mb-2">{`Género: ${String(genres)
               .split(",")
               .join(" / ")}`}</h2>
-            <h2 className="fs-5 mb-2">{`Calificación: ${rating}`}</h2>
-            <h2 className="fs-5 mb-2">{`Descargas: ${download_count}`}</h2>
-            <h2 className="fs-5 mb-2">{`Likes: ${like_count}`}</h2>
-            <h2 className="fs-5 mb-5">{`Subida el: ${date_uploaded
+            <h2 className="film-rating fs-5 mb-2">{`Calificación: ${rating}`}</h2>
+            <h2 className="film-download fs-5 mb-2">{`Descargas: ${download_count}`}</h2>
+            <h2 className="film-likes fs-5 mb-2">{`Likes: ${like_count}`}</h2>
+            <h2 className="film-uploaded fs-5 mb-5">{`Subida el: ${date_uploaded
               ?.split(" ")
               .slice(0, 1)
               .join("-")
               .split("-")
               .reverse()
               .join("/")}`}</h2>
-            <h2 className="fs-5 mb-2">Disponible en:</h2>
+            <h2 className="film-available fs-5 mb-2">Disponible en:</h2>
             <div>
-              <ul className="d-flex flex-wrap gap-3 list-unstyled">
+              <ul className="flex-torrents d-flex flex-wrap gap-3 list-unstyled">
                 {torrents?.map((torrent, index) => (
                   <li key={index}>
                     <a className="btn btn-light mt-2" href={torrent.url}>

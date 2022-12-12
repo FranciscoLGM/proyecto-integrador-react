@@ -1,4 +1,4 @@
-picture {
+.cover-container {
   width: 345px;
   background-image: url("../../assets/images/noposter.svg");
   background-repeat: no-repeat;
@@ -58,17 +58,24 @@ iframe {
   }
 }
 @media (max-width: 768px) {
-  picture {
+  .cover-container {
     margin: 0 auto;
   }
   .grid-film {
     grid-template-columns: 1fr;
   }
-  h1,
-  h2 {
+  .film-title,
+  .film-year,
+  .film-language,
+  .film-genres,
+  .film-rating,
+  .film-download,
+  .film-likes,
+  .film-uploaded,
+  .film-available {
     text-align: center;
   }
-  ul {
+  .flex-torrents {
     display: flex;
     justify-content: center;
   }
@@ -99,7 +106,7 @@ iframe {
   }
 }
 @media (max-width: 400px) {
-  picture {
+  .cover-container {
     width: 260px;
   }
   iframe {
