@@ -16,13 +16,13 @@ const FilmSuggestions = () => {
 
   return (
     <>
-      <h2 className="fs-5 mb-5 text-center">Películas sugeridas:</h2>
+      <h2 className="fs-5 mt-3 mb-0 text-center">Películas sugeridas:</h2>
       {movies?.map((movie) => (
         <Link
           key={movie.id}
           style={{ textDecoration: "none" }}
           to={`/${movie.id}`}
-          className="col-lg-6 col-md-6 col-sm-6 col-6 mb-4 position-relative text-light"
+          className="col-lg-6 col-md-6 col-sm-6 col-6 mb-4 position-relative"
         >
           <div
             className={`${styles.suggestions} d-flex flex-column justify-content-center`}

@@ -8,7 +8,7 @@ const Footer = () => {
         <section className="d-flex flex-sm-row flex-column justify-content-center gap-2 pt-2">
           <p className="m-0 fs-6 text-center">Diseñado y codeado con ❤️ por:</p>
           <a
-            href="https://franciscolopezgarciamayorga.web.app/"
+            href="https://github.com/FranciscoLGM/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary fs-6 fw-semibold"

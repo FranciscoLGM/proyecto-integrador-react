@@ -20,7 +20,7 @@ const Pagination = ({ movieCount, pageNumber, setPageNumber, pageLimit }) => {
   return (
     <>
       <ReactPaginate
-        className="pagination pagination-sm justify-content-center my-4 gap-2 text-light"
+        className="pagination pagination-sm justify-content-center my-4 pb-2 gap-2 text-light"
         nextLabel="Next"
         forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
         previousLabel="Prev"

@@ -1,5 +1,6 @@
 .cover-container {
   width: 345px;
+  height: 514.5px;
   background-image: url("../../assets/images/noposter.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -17,7 +18,7 @@ img {
 }
 iframe {
   display: block;
-  width: 540px;
+  width: 533px;
   height: 315px;
   border-radius: 10px;
 }

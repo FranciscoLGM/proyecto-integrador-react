@@ -85,7 +85,7 @@ const FilmDetail = () => {
               <ul className="flex-torrents d-flex flex-wrap gap-3 list-unstyled">
                 {torrents?.map((torrent, index) => (
                   <li key={index}>
-                    <a className="btn btn-light mt-2" href={torrent.url}>
+                    <a className="btn btn-light mt-3" href={torrent.url}>
                       {`${torrent.quality}.${
                         torrent.type.charAt(0).toUpperCase() +
                         torrent.type.slice(1)
@@ -97,7 +97,7 @@ const FilmDetail = () => {
             </div>
           </div>
 
-          <div className="row film-suggestions">
+          <div className="row container film-suggestions">
             <FilmSuggestions />
           </div>
         </section>
@@ -105,14 +105,24 @@ const FilmDetail = () => {
         <section className="grid-trailer gap-5 mt-5 text-light">
           <div>
             <h2 className="pb-3 pt-3 fw-bold">Trailer</h2>
-            <iframe
-              src={(() =>
-                yt_trailer_code?.length > 1
-                  ? `https://www.youtube.com/embed/${yt_trailer_code}`
-                  : notFound)()}
-              title="YouTube video player"
-              allowFullScreen={true}
-            ></iframe>
+
+            {(() => {
+              if (yt_trailer_code?.length > 1) {
+                return (
+                  <iframe
+                    src={`https://www.youtube.com/embed/${yt_trailer_code}`}
+                    title="YouTube video player"
+                    allowFullScreen={true}
+                  ></iframe>
+                );
+              } else {
+                return (
+                  <picture>
+                    <img src={notFound} alt="" className="img-fluid rounded" />
+                  </picture>
+                );
+              }
+            })()}
           </div>
           <div>
             <h2 className="pb-3 pt-3 fw-bold">Imágenes</h2>
