@@ -4,6 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### `production build`
+
+Runs the app in the production mode.\
+Open [https://peliculas-yts.netlify.app](https://peliculas-yts.netlify.app/) to view it in your browser.
+
 In the project directory, you can run:
 
 ### `npm start`
