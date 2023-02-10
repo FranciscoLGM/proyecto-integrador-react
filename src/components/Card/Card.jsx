@@ -26,9 +26,13 @@ const Card = ({ page, results }) => {
           </div>
           <div className={`${styles.content}`}>
             <div className="fs-6 fw-bold pt-2">
-              <span
-                className={`${styles.language}`}
-              >{`[${language.toUpperCase()}] `}</span>
+              <span className={`${styles.language}`}>
+                {(() => {
+                  if (language?.length > 1) {
+                    return `[${language.toUpperCase()}] `;
+                  }
+                })()}
+              </span>
               {title}
             </div>
             <div className="fs-6">{year}</div>
